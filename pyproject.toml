@@ -12,6 +12,9 @@ dependencies = [
 ]
 
 [dependency-groups]
+beautifulsoup = [
+    "beautifulsoup4>=4.14.3",
+]
 # Development & Tooling
 dev = [
     "ipykernel>=7.1.0",
@@ -33,4 +36,4 @@ pygame = [
 
 # Auto-install everything for participants on 'uv sync'
 [tool.uv]
-default-groups = ["dev", "langchain", "pygame"]
+default-groups = ["dev", "langchain", "pygame", "beautifulsoup"]
